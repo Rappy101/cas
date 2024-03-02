@@ -1,0 +1,57 @@
+body {
+    margin: 100px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.video-container {
+    flex: 1;
+}
+
+.video-container video {
+    width: 100%;
+    height: 75vh; /* Adjust the height as needed */
+}
+
+.info-container {
+    color: #fff;
+    flex: 1;
+    padding: 20px;
+    background-color: #020202; /* Set background color for the info container */
+}
+
+.info-container h1 {
+    font-size: 50px;
+    margin-top: 200px;
+    font-family: "Titillium Web";
+}
+
+.info-container p {
+    font-size: 30px;
+    line-height: 1.5;
+    font-family: "Titillium Web";
+}
+
+.info-container a {
+    display: inline-block;
+    font-family: "Titillium Web";
+    padding: 10px 30px;
+    margin: 10px 50px;
+    border: 1px solid #00f7ff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+  }
+  
+  .info-container a:hover{
+    background: #1aeeef;
+    border: none;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeeef;
+  }

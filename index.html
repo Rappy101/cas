@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Crash</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="gold1.ico">
+    <link rel="stylesheet" href="customshop.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+</head>
+
+<body style="overflow-y: scroll; overflow-x: hidden;">
+    <header>
+        <a href="" class="logo">Cash Crash <img src="gold1.ico" alt="Icon" class="navbar-icon" width="30" height="30"> </a>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">Game Info</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="hot.html">Hot Deals</a></li>
+            <li><a href="#index.html#section2" onclick="scrollToSection('#section2')">About</a></li>
+        </ul>
+
+
+        <div class="toggleMenu"></div>
+    </header>
+
+    <!--home banner -->
+
+
+
+
+
+    <div class="banner">
+        <div class="bg">
+            <div class="content">
+                <h2 class="low"> Low Price <br>
+                    Guaranteed </h2>
+                <p class="cred">Your #1 Gaming Credits Store At Your Service!</p>
+
+                <div class ="ico">
+                    <img src="rp.png" alt="the back of random person" style="--f:.12;--r:5px" class="stylimg">
+                    <img src="dia.png" alt="an eagle" style="--f:.12;--r:5px" class="stylimg">
+                    <img src="vbucks.png" alt="a cup of something to drink, probably some tea" style="--f:.12;--r:5px" class="stylimg">
+                    <img src="primo.png" alt="a cup of something to drink, probably some tea" style="--f:.12;--r:5px" class="stylimg"> </br>
+                    <a class="butn" href="shop.html">BUY NOW?</a>
+                </div>
+
+
+            </div>
+            <img src="gamechar.png" alt="gamechar" class="bgm">
+        </div>
+    </div>
+
+
+    <section id="section2">
+    <!--- about--->
+    <div class="bga">
+        <div class="about">
+            <div class="contentBx">
+                <h2>ABOUT</h2>
+                <p>1. Q: What sets CashCrash apart from other gaming credit websites?<br><br>
+
+                    A: CashCrash stands out by consistently offering heavily discounted gaming credits, setting it apart from other platforms. <br><br>
+                    2. Q: How does CashCrash ensure the security of transactions on its platform? <br><br>
+
+                    A: CashCrash ensures secure transactions through advanced encryption and trusted payment gateways, safeguarding user information.<br><br>
+                    3. Q: Can users expect regular promotions or special offers on CashCrash? <br><br>
+
+                    A: Yes, CashCrash regularly offers promotions, providing users with ongoing opportunities for discounted gaming credits and enhanced savings. </p>
+                <a class="btn2" href="shop.html">BUY NOW?</a>
+            </div>
+            <img src="money.png" alt="" class="mon">
+        </div>
+    </div>
+</section>
+
+
+<script>
+    window.addEventListener('scroll',function(){
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky',window.scrollY > 0);
+    });
+</script>
+
+<script>
+    ScrollReveal({
+
+        reset: true,
+        distance:'90px',
+        duration: 2500,
+        delay: 500
+    });
+
+    ScrollReveal().reveal('.low',{delay: 200});
+    ScrollReveal().reveal('.cred',{delay: 400});
+    ScrollReveal().reveal('.ico',{delay: 600});
+    ScrollReveal().reveal('.bgm',{delay: 800 , origin: 'right'});
+</script>
+
+<script>
+    ScrollReveal({
+
+        reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 200
+    });
+
+    ScrollReveal().reveal('.contentBx',{delay: 200});
+    ScrollReveal().reveal('.mon',{delay: 400, origin: 'right' });
+</script>
+
+<script>
+    function scrollToSection(sectionId) {
+    document.querySelector(sectionId).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+</script>
+
+
+</body>
+
+</html>

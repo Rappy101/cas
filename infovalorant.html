@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Crash</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vid.css">
+    <link rel="icon" href="gold1.ico">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+</head>
+
+<body style="overflow-y: scroll; overflow-x: hidden;" >
+    <header>
+        <a href="" class="logo">Cash Crash <img src="gold1.ico" alt="Icon" class="navbar-icon" width="30" height="30"> </a>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">Game Info</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="hot.html">Hot Deals</a></li>
+            <li><a href="index.html#section2">about</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchBx">
+                <a href=""><i class="bx bx-search"></i></a>
+                <input type="text" placeholder="Search Games">
+            </div>
+        </div>
+
+        <div class="toggleMenu"></div>
+    </header>
+
+        
+    <div class="container">
+        <div class="video-container">
+            <!-- Embed your video here, for example using YouTube iframe -->
+            <video class="valtr" autoplay muted controls width="560" height="315" src="valtrail.mp4" frameborder="0" allowfullscreen></video>
+        </div>
+        <div class="info-container">
+            <h1 class="tit">Valorant</h1>
+            <p class="tit" >Valorant is an online multiplayer computer game, produced by Riot Games. It is a first-person shooter game, consisting of two teams of five, 
+                where one team attacks and the other defends.</p>
+
+                <a href="shop.html">Buy credits</a>
+                <a href="info.html">Go back</a>
+        </div>
+
+
+        
+    </div>
+    
+</body>
+
+<script>
+    ScrollReveal({
+
+        reset: true,
+        distance:'90px',
+        duration: 2500,
+        delay: 500
+    });
+    ScrollReveal().reveal('.tit',{delay: 400 , origin: 'right'});
+    ScrollReveal().reveal('.valtr',{delay: 400 , origin: 'left'});
+
+    ScrollReveal().reveal('.info-container',{delay: 400 , origin: 'right'});
+</script>
+
+</html>
